@@ -7,8 +7,8 @@ const resultado = document.getElementById("resultado");
 
 function agregarAmigo() {
     const nombre = input.value.trim();
-    if (nombre === "") {
-        alert("Por favor, ingresa un nombre válido.");
+    if (amigos.includes(nombre)) {
+        alert("Ese nombre ya está en la lista");
         return;
     }
 
